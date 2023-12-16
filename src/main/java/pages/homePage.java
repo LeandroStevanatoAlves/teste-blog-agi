@@ -7,11 +7,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class homePage {
-    private WebDriver driver;
-    private WebDriverWait wait;
-    By botaoAbrePesquisa = By.id("search-open");
-    By campoPesquisa = By.className("search-field");
-    By botaoPesquisa = By.className("search-submit");
+    private final WebDriver driver;
+    private final WebDriverWait wait;
+    private final By botaoAbrePesquisa = By.id("search-open");
+    private final By campoPesquisa = By.className("search-field");
+    private final By botaoPesquisa = By.className("search-submit");
 
     public homePage(WebDriver driver, WebDriverWait wait){
         this.driver = driver;

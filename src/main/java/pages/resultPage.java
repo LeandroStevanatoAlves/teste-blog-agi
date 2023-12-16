@@ -7,11 +7,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class resultPage {
-    private WebDriver driver;
-    private WebDriverWait wait;
+    private final WebDriver driver;
+    private final WebDriverWait wait;
 
-    private By textoResultado = By.className("archive-title");
-    private By textoSemResultado = By.className("entry-title");
+    private final By textoResultado = By.className("archive-title");
+    private final By textoSemResultado = By.className("entry-title");
 
     public resultPage(WebDriver driver, WebDriverWait wait){
         this.driver = driver;
